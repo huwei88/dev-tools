@@ -17,6 +17,36 @@ const router = createRouter({
       component: () => import('./tools/encoders/HtmlEncoder.vue')
     },
     {
+      path: '/encoders/url',
+      name: 'UrlEncoder',
+      component: () => import('./tools/encoders/UrlEncoder.vue')
+    },
+    {
+      path: '/encoders/base64',
+      name: 'Base64Coder',
+      component: () => import('./tools/encoders/Base64Coder.vue')
+    },
+    {
+      path: '/encoders/gzip',
+      name: 'GzipCompressor',
+      component: () => import('./tools/encoders/GzipCompressor.vue')
+    },
+    {
+      path: '/encoders/jwt',
+      name: 'JwtDecoder',
+      component: () => import('./tools/encoders/JwtDecoder.vue')
+    },
+    {
+      path: '/formatters/json',
+      name: 'JsonFormatter',
+      component: () => import('./tools/formatters/JsonFormatter.vue')
+    },
+    {
+      path: '/formatters/sql',
+      name: 'SqlFormatter',
+      component: () => import('./tools/formatters/SqlFormatter.vue')
+    },
+    {
       path: '/converters/json-yaml',
       name: 'JsonYamlConverter',
       component: () => import('./tools/converters/JsonYamlConverter.vue')

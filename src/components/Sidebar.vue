@@ -137,6 +137,26 @@ const categories = ref([
         id: 'html-encoder',
         name: 'HTML Encoder',
         path: '/encoders/html'
+      },
+      {
+        id: 'url-encoder',
+        name: 'URL Encoder',
+        path: '/encoders/url'
+      },
+      {
+        id: 'base64-coder',
+        name: 'Base64 Coder',
+        path: '/encoders/base64'
+      },
+      {
+        id: 'gzip-compressor',
+        name: 'GZip Compressor',
+        path: '/encoders/gzip'
+      },
+      {
+        id: 'jwt-decoder',
+        name: 'JWT Decoder',
+        path: '/encoders/jwt'
       }
     ]
   },
@@ -145,7 +165,18 @@ const categories = ref([
     name: '格式化',
     icon: 'svg',
     expanded: false,
-    tools: []
+    tools: [
+      {
+        id: 'json-formatter',
+        name: 'JSON Formatter',
+        path: '/formatters/json'
+      },
+      {
+        id: 'sql-formatter',
+        name: 'SQL Formatter',
+        path: '/formatters/sql'
+      }
+    ]
   },
   {
     id: 'generators',

@@ -1,12 +1,17 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [vue()],
-  resolve: {
-    alias: {
-      '@': '/src',
+export default defineConfig(() => {
+  const repo = process.env.GITHUB_REPOSITORY?.split('/')[1]
+  const isCI = !!process.env.GITHUB_ACTIONS
+  const base = isCI && repo ? `/${repo}/` : '/'
+  return {
+    base,
+    plugins: [vue()],
+    resolve: {
+      alias: {
+        '@': '/src',
+      },
     },
-  },
+  }
 })

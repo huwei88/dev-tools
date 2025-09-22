@@ -175,6 +175,11 @@ const categories = ref([
         id: 'sql-formatter',
         name: 'SQL Formatter',
         path: '/formatters/sql'
+      },
+      {
+        id: 'xml-formatter',
+        name: 'XML Formatter',
+        path: '/formatters/xml'
       }
     ]
   },
@@ -183,21 +188,49 @@ const categories = ref([
     name: '生成器',
     icon: 'svg',
     expanded: false,
-    tools: []
+    tools: [
+      {
+        id: 'hash-generator',
+        name: 'Hash Generator',
+        path: '/generators/hash'
+      },
+      {
+        id: 'uuid-generator',
+        name: 'UUID Generator',
+        path: '/generators/uuid'
+      },
+      {
+        id: 'lorem-generator',
+        name: 'Lorem Ipsum',
+        path: '/generators/lorem'
+      },
+      {
+        id: 'checksum-generator',
+        name: 'Checksum Generator',
+        path: '/generators/checksum'
+      }
+    ]
   },
   {
     id: 'text',
     name: '文本工具',
     icon: 'svg',
     expanded: false,
-    tools: []
+    tools: [
+      { id: 'text-diff', name: 'Text Diff', path: '/text/diff' },
+      { id: 'regex-tester', name: 'Regex Tester', path: '/text/regex' },
+      { id: 'text-inspector', name: 'Text Inspector', path: '/text/inspector' }
+    ]
   },
   {
     id: 'graphic',
     name: '图形工具',
     icon: 'svg',
     expanded: false,
-    tools: []
+    tools: [
+      { id: 'color-picker', name: 'Color Picker', path: '/graphic/color' },
+      { id: 'image-compressor', name: 'Image Compressor', path: '/graphic/image-compressor' }
+    ]
   }
 ])
 

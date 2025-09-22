@@ -47,6 +47,56 @@ const router = createRouter({
       component: () => import('./tools/formatters/SqlFormatter.vue')
     },
     {
+      path: '/formatters/xml',
+      name: 'XmlFormatter',
+      component: () => import('./tools/formatters/XmlFormatter.vue')
+    },
+    {
+      path: '/generators/hash',
+      name: 'HashGenerator',
+      component: () => import('./tools/generators/HashGenerator.vue')
+    },
+    {
+      path: '/generators/uuid',
+      name: 'UuidGenerator',
+      component: () => import('./tools/generators/UuidGenerator.vue')
+    },
+    {
+      path: '/generators/lorem',
+      name: 'LoremIpsumGenerator',
+      component: () => import('./tools/generators/LoremIpsumGenerator.vue')
+    },
+    {
+      path: '/generators/checksum',
+      name: 'ChecksumGenerator',
+      component: () => import('./tools/generators/ChecksumGenerator.vue')
+    },
+    {
+      path: '/text/diff',
+      name: 'TextDiffViewer',
+      component: () => import('./tools/text/TextDiffViewer.vue')
+    },
+    {
+      path: '/text/regex',
+      name: 'RegexTester',
+      component: () => import('./tools/text/RegexTester.vue')
+    },
+    {
+      path: '/text/inspector',
+      name: 'TextInspector',
+      component: () => import('./tools/text/TextInspector.vue')
+    },
+    {
+      path: '/graphic/color',
+      name: 'ColorPicker',
+      component: () => import('./tools/graphic/ColorPicker.vue')
+    },
+    {
+      path: '/graphic/image-compressor',
+      name: 'ImageCompressor',
+      component: () => import('./tools/graphic/ImageCompressor.vue')
+    },
+    {
       path: '/converters/json-yaml',
       name: 'JsonYamlConverter',
       component: () => import('./tools/converters/JsonYamlConverter.vue')
